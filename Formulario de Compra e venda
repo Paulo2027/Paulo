@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2>Cadastro de Produtos</h2>
+    <form id="productForm">
+        <div class="form-group">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" class="form-control" id="productName" name="productName">
+        </div>
+        <div class="form-group">
+            <label for="supplierName">Nome do Fornecedor:</label>
+            <input type="text" class="form-control" id="supplierName" name="supplierName">
+        </div>
+        <div class="form-group">
+            <label for="purchaseDate">Data da Compra:</label>
+            <input type="date" class="form-control" id="purchaseDate" name="purchaseDate">
+        </div>
+        <div class="form-group">
+            <label for="purchaseValue">Valor de Compra:</label>
+            <input type="number" class="form-control" id="purchaseValue" name="purchaseValue" step="0.01">
+        </div>
+        <div class="form-group">
+            <label for="sellingValue">Valor de Venda:</label>
+            <input type="number" class="form-control" id="sellingValue" name="sellingValue" step="0.01">
+        </div>
+        <div class="form-group">
+            <label for="category">Categoria:</label>
+            <select class="form-control" id="category" name="category">
+                <option value="eletronico">Eletrônico</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="alimento">Alimento</option>
+                <!-- Adicione mais opções de categoria conforme necessário -->
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+    </form>
+</div>
+
+<!-- Handlebars.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+<!-- Seu script Handlebars aqui (por exemplo, para processar o formulário) -->
+
+</body>
+</html>
